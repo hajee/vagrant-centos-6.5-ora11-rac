@@ -1,10 +1,10 @@
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'hajee-ora_rac', :git => 'https://github.com/hajee/ora_rac.git'
+mod 'hajee-ora_rac', '>= 0.4.0'
 mod 'hajee-easy_type'
-mod 'hajee-oracle', :git => 'https://github.com/hajee/oracle.git'
+mod 'hajee-oracle', '>= 0.5.0'
 mod 'hajee-hacks'
-mod 'hajee-partition', :git => 'https://github.com/hajee/partition.git'
+mod 'hajee-partition', '>= 0.0.3'
 mod 'biemond-oradb'
 mod 'puppetlabs-firewall'
 mod 'yelp-netstdlib', :git => 'https://www.github.com/Yelp/puppet-netstdlib.git'

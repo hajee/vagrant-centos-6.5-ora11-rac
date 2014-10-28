@@ -12,43 +12,17 @@ FORGE
     erwbgy-limits (0.3.1)
     erwbgy-ssh (0.2.1)
       domcleal-augeasproviders (>= 0.5.1)
-    hajee-easy_type (0.13.1)
+    hajee-easy_type (0.13.3)
     hajee-hacks (0.0.2)
+    hajee-ora_rac (0.4.0)
+      hajee-easy_type (>= 0.13.1)
+    hajee-oracle (0.5.0)
+      hajee-easy_type (>= 0.13.1)
+    hajee-partition (0.0.3)
+      hajee-easy_type (>= 0.12.4)
     puppetlabs-firewall (1.1.3)
     puppetlabs-stdlib (4.3.2)
     ripienaar-module_data (0.0.3)
-
-GIT
-  remote: git://github.com/hajee/easy_type.git
-  ref: master
-  sha: 0d25a622d7e1a82f41981a7a864f4ebd547429d5
-  specs:
-    easy_type (0.13.1)
-
-GIT
-  remote: https://github.com/hajee/ora_rac.git
-  ref: master
-  sha: 23d4b9b27359db210eead896177bcfd12488a2e5
-  specs:
-    hajee-ora_rac (0.3.0)
-      hajee-easy_type (>= 0.13.1)
-
-GIT
-  remote: https://github.com/hajee/oracle.git
-  ref: master
-  sha: 763c3b60733858237debda6f0af3028c34aa1f66
-  specs:
-    hajee-oracle (0.5.0)
-      easy_type (>= 0)
-      hajee-easy_type (>= 0.13.0)
-
-GIT
-  remote: https://github.com/hajee/partition.git
-  ref: master
-  sha: 7038d4f92e7a7e611d44550270b89ce32186bc3b
-  specs:
-    hajee-partition (0.0.3)
-      hajee-easy_type (>= 0.12.4)
 
 GIT
   remote: https://www.github.com/Yelp/puppet-netstdlib.git
@@ -66,9 +40,9 @@ DEPENDENCIES
   erwbgy-ssh (>= 0)
   hajee-easy_type (>= 0)
   hajee-hacks (>= 0)
-  hajee-ora_rac (>= 0)
-  hajee-oracle (>= 0)
-  hajee-partition (>= 0)
+  hajee-ora_rac (>= 0.4.0)
+  hajee-oracle (>= 0.5.0)
+  hajee-partition (>= 0.0.3)
   puppetlabs-firewall (>= 0)
   puppetlabs-stdlib (>= 0)
   ripienaar-module_data (>= 0)
