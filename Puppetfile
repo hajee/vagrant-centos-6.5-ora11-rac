@@ -1,6 +1,6 @@
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'hajee-ora_rac', '>= 0.6.0'
+mod 'hajee-ora_rac', '>= 0.6.2'
 mod 'hajee/easy_type'
 mod 'hajee-oracle', '>= 1.0.0'
 mod 'hajee-hacks'
