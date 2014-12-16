@@ -1,8 +1,8 @@
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'hajee-ora_rac', '>= 0.4.0'
-mod 'hajee-easy_type'
-mod 'hajee-oracle', '>= 0.5.0'
+mod 'hajee-ora_rac', '>= 0.6.0'
+mod 'hajee/easy_type'
+mod 'hajee-oracle', '>= 1.0.0'
 mod 'hajee-hacks'
 mod 'hajee-partition', '>= 0.0.3'
 mod 'biemond-oradb'

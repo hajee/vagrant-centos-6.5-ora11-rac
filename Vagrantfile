@@ -33,7 +33,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     db1.vm.provision :shell, :inline => "ln -sf /vagrant/puppet/hiera.yaml /etc/puppet/hiera.yaml"
     db1.vm.provision :shell, :inline => "rm -rf /etc/puppet/hieradata; ln -sf /vagrant/puppet/hieradata /etc/puppet/hieradata"
 
-    db1.vm.provision :puppet, :id => 2 do |puppet|
+    db1.vm.provision :puppet do |puppet|
       puppet.module_path       = "puppet/modules"
       puppet.manifests_path    = "puppet/manifests"
       puppet.manifest_file     = "site.pp"
@@ -66,8 +66,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     db2.vm.provision :shell, :inline => "ln -sf /vagrant/puppet/hiera.yaml /etc/puppet/hiera.yaml"
     db2.vm.provision :shell, :inline => "rm -rf /etc/puppet/hieradata; ln -sf /vagrant/puppet/hieradata /etc/puppet/hieradata"
+    db2.vm.provision :shell, :inline => "puppet resource package puppet ensure=3.6.1-1.el6 allow_virtual=false"
 
-    db2.vm.provision :puppet, :id => 2 do |puppet|
+
+    db2.vm.provision :puppet  do |puppet|
       puppet.module_path       = "puppet/modules"
       puppet.manifests_path    = "puppet/manifests"
       puppet.manifest_file     = "site.pp"

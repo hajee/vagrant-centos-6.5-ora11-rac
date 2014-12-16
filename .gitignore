@@ -2,6 +2,7 @@
 .tmp
 .DS_Store
 software
+puppet/modules/module_data
 puppet/modules/augeasproviders
 puppet/modules/boolean
 puppet/modules/easy_type
@@ -17,5 +18,6 @@ puppet/modules/oradb
 puppet/modules/partition
 puppet/modules/ssh
 puppet/modules/stdlib
+puppet/modules/concat
 .vagrant
 *.vdi
